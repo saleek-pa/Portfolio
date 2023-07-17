@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #container {
+      margin: 100px auto;
+      width: 30%;
+      font-family: monospace;
+      border-radius: 30px;
+      border: 1px solid grey;
+      padding: 40px;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    #depositbtn,
+    #withdrawbtn {
+      background-color: grey;
+      color: white;
+      border-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h2>Balance: &#8377<span id="balance">0</span></h2>
+    <label for="deposit">Deposit</label><br />
+    <input type="number" id="deposit" min="1" />
+    <input type="submit" id="depositbtn" value="Deposit" onclick="depositfn()" /><br /><br />
+    <label for="withdraw">Withdraw</label><br />
+    <input type="number" id="withdraw" min="1" />
+    <input type="submit" id="withdrawbtn" value="Withdraw" onclick="withdrawfn()" />
+  </div>
+
+  <script>
+    total = 0;
+
+    function depositfn() {
+      deposit = Number(document.getElementById("deposit").value)
+      total += deposit;
+      document.getElementById("balance").innerHTML = total
+      document.getElementById("deposit").value = ""
+    }
+
+    function withdrawfn() {
+      withdraw = document.getElementById("withdraw").value
+      if (total >= withdraw) {
+        total -= withdraw;
+        document.getElementById("balance").innerHTML = total
+        document.getElementById("withdraw").value = ""
+      } else {
+        alert("Insufficient Balance!")
+      }
+    }
+  </script>
+</body>
+
+</html>

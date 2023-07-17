@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .top {
+        height: 65px;
+        background-color: white;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        width: 45px;
+        padding: 5px 10px;
+      }
+
+      .logo img {
+        width: 100%;
+      }
+
+      .top-left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      button {
+        border-radius: 20px;
+        border-width: 0;
+        height: 40px;
+        margin: 10px 5px;
+        padding: 15px;
+        font-weight: bold;
+      }
+
+      .pro {
+        background-color: black;
+        color: white;
+      }
+
+      .pro:hover {
+        background-color: gray;
+      }
+
+      .certified {
+        background-color: rgb(250, 150, 167);
+        color: black;
+      }
+
+      .certified:hover {
+        background-color: rgb(255, 186, 198);
+      }
+
+      .website {
+        background-color: rgb(255, 255, 87);
+        color: black;
+      }
+
+      .website:hover {
+        background-color: rgb(255, 255, 137);
+      }
+      .signup {
+        background-color: #04aa6d;
+        color: white;
+        position: absolute;
+      }
+
+      .signup:hover {
+        background-color: #007e50;
+      }
+      .login {
+        background-color: rgb(208, 240, 235);
+        color: black;
+        padding-left: 90px;
+      }
+
+      .login:hover {
+        color: white;
+        background-color: #007e50;
+      }
+
+      .bottom {
+        height: 50px;
+        background: #282a35;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .top-left li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-family: sans-serif;
+        font-weight: 600;
+        padding: 0px 20px;
+        color: black;
+      }
+
+      .top-left li:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .bottom-left, .bottom-right{
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+
+      .bottom-left li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-family: sans-serif;
+        font-weight: 600;
+        padding: 0px 15px;
+        color: white;
+      }
+
+      .bottom-right li {
+        list-style-type: none;
+        padding: 14px 20px;
+      }
+
+      .bottom-left li:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .bottom-right li:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-left">
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/512px-W3Schools_logo.svg.png?20210601004220"
+            alt="Logo"
+          />
+        </div>
+        <li>Tutorials⏷</li>
+        <li>References⏷</li>
+        <li>Exercises⏷</li>
+        <li>Bootcamp</li>
+      </div>
+      <div class="top-right">
+        <button class="pro">Pro</button>
+        <button class="certified">Get Certified</button>
+        <button class="website">Create Website</button>
+        <button class="signup">Sign Up</button>
+        <button class="login">log in</button>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-left">
+        <li>
+          <i
+            class="fa fa-home"
+            style="font-size: 20px; padding: 0; color: white"
+          ></i>
+        </li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>SQL</li>
+        <li>PYTHON</li>
+        <li>JAVA</li>
+        <li>PHP</li>
+        <li>BOOTSTRAP</li>
+        <li>HOW TO</li>
+        <li>W3.CSS</li>
+        <li>C</li>
+        <li>C++</li>
+      </div>
+      <div class="bottom-right">
+        <li>
+          <i class="fa fa-adjust" style="font-size: 20px; color: white"></i>
+        </li>
+        <li>
+          <i class="fa fa-globe" style="font-size: 20px; color: white"></i>
+        </li>
+        <li>
+          <i class="fa fa-search" style="font-size: 20px; color: white"></i>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

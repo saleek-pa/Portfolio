@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkedin</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* Top Section */
+
+    .top-container {
+      height: 100px;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .top-left,
+    .top-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-left>img {
+      height: 30px;
+    }
+
+    .top-right li,
+    button {
+      list-style-type: none;
+      height: 100%;
+      font-family: sans-serif;
+      font-weight: 600;
+      padding: 7px 15px;
+      color: #696969;
+    }
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon:hover {
+      color: black;
+    }
+
+    li .fa {
+      font-size: 20px;
+    }
+
+    .vl {
+      border-left: .1px solid #696969;
+      height: 30px;
+    }
+
+    .top-right .signin {
+      padding: 10px 20px;
+      margin-left: 10px;
+      color: blue;
+      border-radius: 20px;
+      border-color: blue;
+      border-width: 1px;
+      background-color: white;
+    }
+
+    .signin:hover {
+      color: black;
+      background-color: rgb(215, 255, 255);
+    }
+
+    .top-right .join {
+      border-style: none;
+      background-color: white;
+      padding: 12px 20px;
+    }
+
+    .join:hover {
+      border-radius: 20px;
+      background-color: rgb(243, 252, 255);
+    }
+
+    /* Form Section */
+
+    .bottom-container {
+      display: flex;
+    }
+
+    .bottom-left {
+      margin-left: 160px;
+    }
+
+    .bottom-left p {
+      color: #8F5849;
+      font-size: 46px;
+      font-weight: 200;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin-bottom: 30px;
+      margin-top: 5px;
+    }
+
+    .bottom-left input {
+      width: 350px;
+      height: 40px;
+      border-radius: 5px;
+      border-width: 1px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+
+    input:hover {
+      background-color: rgb(243, 252, 255);
+      border: 2.5px solid black;
+    }
+
+    .bottom-left label {
+      color: #000000BF;
+      font-size: 14px;
+    }
+
+    .bottom-left .forgot {
+      color: blue;
+      font-size: 16px;
+    }
+
+    .forgot:hover {
+      color: black;
+      border-bottom: 1px solid blue;
+    }
+
+    .bottom-left .submit {
+      border-radius: 20px;
+      background-color: blue;
+      border-color: blue;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .submit:hover {
+      background-color: rgb(0, 0, 155);
+    }
+
+    .divider {
+      display: flex;
+    }
+
+    .divider3,
+    .divider2 {
+      align-self: center;
+      background-color: gray;
+      width: 155px;
+      height: 1px;
+    }
+
+    .bottom-left button {
+      background-color: white;
+      border-radius: 20px;
+      border-color: gray;
+      width: 350px;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    button .fa-google {
+      color: blue;
+    }
+
+    .bottom-left .google {
+      border: .1px solid rgb(140, 140, 140);
+    }
+
+    .bottom-left .linkedin {
+      border: .1px solid rgb(0, 0, 0);
+    }
+
+    .linkedin:hover {
+      color: black;
+    }
+
+    /* Image Section */
+
+    .bottom-right {
+      margin-top: 50px;
+      margin-left: 40px;
+    }
+
+    .bottom-right img {
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="top-left">
+      <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-png.png" alt="Logo" />
+    </div>
+    <div class="top-right">
+      <li class="icon">
+        <i class="fa fa-compass" aria-hidden="true"></i>Discover
+      </li>
+      <li class="icon">
+        <i class="fa fa-users" aria-hidden="true"></i>People
+      </li>
+      <li class="icon">
+        <i class="fa fa-play" aria-hidden="true"></i>Learning
+      </li>
+      <li class="icon">
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>Jobs
+      </li>
+      <li>
+        <div class="vl"></div>
+      </li>
+      <button class="join">Join Now</button>
+      <button class="signin">Sign in</button>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <section class="bottom-left">
+      <p>Welcome to your<br />professional community</p>
+      <label for="email">Email or phone</label><br />
+      <input type="text" id="email" name="email" /><br />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" name="password" /><br />
+      <label class="forgot">Forgot password?</label><br />
+      <input class="submit" type="submit" value="Sign in" />
+      <div class="divider">
+        <div class="divider2"></div>
+        <pre> or </pre>
+        <div class="divider3"></div>
+      </div>
+      <br />
+      <button class="google">
+        <i class="fa fa-google" aria-hidden="true"></i>&nbsp;&nbsp;Continue
+        With Google</button><br />
+      <button class="linkedin">New to LinkedIn? Join now</button>
+    </section>
+    <section class="bottom-right">
+      <img src="https://media.licdn.com/media//AAYQAgSrAAgAAQAAAAAAAF28luld64NDRCi0l6N4Bki57w.png" alt="" />
+    </section>
+  </div>
+</body>
+
+</html>
